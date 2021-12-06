@@ -1,24 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
-body {
-  width: 100%;
-  margin: 0px;
-  font-family: Roboto;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.homepage-header {
   position: relative;
-  font-family: Shrikhand;
-  font-size: 30px;
-  height: 64px;
   box-shadow: 0px 5px 2px 0px #bbbbbb80;
-}
-
-.logo {
-  margin: 0px;
 }
 
 .section1 {
@@ -68,19 +52,6 @@ h2 {
   font-size: 18px;
   font-weight: 200;
   color: #353535;
-}
-
-.btn-explored {
-  align-self: center;
-  background: linear-gradient(to bottom right, #ff79DA, #9356DC);
-  color: white;
-  border-radius: 25px;
-  border: none;
-  width: 220px;
-  height: 50px;
-  font-size: 15px;
-  margin: 15px 0px 20px 0px;
-  box-shadow: 2px 2px 10px 2px #bbbbbb80;
 }
 
 .section2 {
@@ -199,6 +170,157 @@ h2 {
   margin: 10px 14px 25px 60px;
 }
 
+.fas.fa-utensils, .fas.fa-hands-helping {
+  padding-right: 10px;
+}
+
+.cards-heart-purple {
+  color: #9356DC;
+  cursor: pointer;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 25px;
+  padding: 20px 0px 10px 20px;
+}
+
+.link-home {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-header {
+  box-shadow: none;
+}
+
+.menu-photo-height {
+  height: 220px;
+}
+
+.menu-photo {
+  width: 100%;
+  height: 220px;
+}
+
+.menu-content {
+  background-color: #f6f6f6;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  margin-top: -40px;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.restaurant-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Shrikhand;
+  font-size: 30px;
+  margin: 0px;
+  padding-top: 5px;
+}
+
+.menu-heart {
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+.menu-section {
+  margin-bottom: 50px;
+}
+
+.menu-title {
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.menu-bar {
+  width: 55px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-top: -15px;
+}
+
+.food-content {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  width: auto;
+  height: 70px;
+  margin: 14px 0px 20px 0px;
+  padding: 0px 12px 15px 12px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px 2px #bbbbbb80;
+}
+
+.food-title {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.food-subtitle {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.food-price {
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 15px;
+}
+
+.menu-command {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  font-family: Roboto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Shrikhand;
+  font-size: 30px;
+}
+
+.logo {
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.btn {
+  align-self: center;
+  background: linear-gradient(to bottom right, #ff79DA, #9356DC);
+  color: white;
+  border-radius: 25px;
+  border: none;
+  width: 220px;
+  height: 50px;
+  font-size: 15px;
+  margin: 15px 0px 20px 0px;
+  box-shadow: 2px 2px 10px 2px #bbbbbb80;
+}
+
 footer {
   background-color: #353535;
   padding: 25px 25px 15px 25px;
@@ -220,25 +342,6 @@ footer {
 .footer-text, .fas.fa-utensils, .fas.fa-hands-helping {
   margin: 0px 0px 10px 0px;
   font-size: 14px;
-}
-
-.fas.fa-utensils, .fas.fa-hands-helping {
-  padding-right: 10px;
-}
-
-.cards-heart-purple {
-  color: #9356DC;
-  cursor: pointer;
-}
-
-.card-link {
-  text-decoration: none;
-  color: black;
-}
-
-.contact-link {
-  text-decoration: none;
-  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

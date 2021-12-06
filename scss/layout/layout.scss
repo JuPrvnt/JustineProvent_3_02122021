@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-logo;
+    font-size: 30px;
+}
+
+.logo {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.btn {
+    align-self: center;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    width: 220px;
+    height: 50px;
+    font-size: 15px;
+    margin: 15px 0px 20px 0px;
+    box-shadow: $shadow-site;
+}
+
+footer {
+    background-color: $dark-grey;
+    padding: 25px 25px 15px 25px;
+    color: white;
+}
+
+.footer-title {
+    font-family: $font-logo;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.footer-with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-text, .fas.fa-utensils, .fas.fa-hands-helping {
+    margin: 0px 0px 10px 0px;
+    font-size: 14px;
+}
