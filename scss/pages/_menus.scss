@@ -81,7 +81,7 @@
     justify-content: space-between;
     width: 360px;
     height: auto;
-    margin: 14px 0px 20px 0px;
+    margin: 14px 0px 10px 0px;
     padding: 15px 0px 15px 12px;
     border-radius: 25px;  
     box-shadow: $shadow-site;
@@ -92,18 +92,21 @@
     font-weight: 500;
     padding-bottom: 5px;
     overflow: hidden;
+    margin: 0px;
 }
 
 .food-subtitle {
     font-size: 16px;
     font-weight: 200;
     overflow: hidden;
+    margin: 0px;
 }
 
 .food-price {
     font-size: 16px;
     font-weight: 500;
     padding-right: 20px;
+    margin: 0px;
 }
 
 .menu-command {
