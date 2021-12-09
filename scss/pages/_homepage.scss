@@ -55,7 +55,8 @@ h2 {
 .section2 {
     display: flex;
     flex-direction: column;
-    padding: 30px 20px 50px 20px;
+    padding: 30px 25px 50px 20px;
+    margin-right: 20px;
 }
 
 .section-title {
@@ -73,11 +74,11 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 325px;
+    width: 330px;
     height: 75px;
     background-color: $background-soft-grey;
     border-radius: 25px;
-    margin: 0px 0px 20px 12px;
+    margin: 0px 0px 20px 35px;
     box-shadow: $shadow-site;
 }
 
@@ -185,4 +186,12 @@ h2 {
 .contact-link {
     text-decoration: none;
     color: white;
+}
+
+
+@media screen and (max-width: 375px) {
+    
+    .filter1, .filter2, .filter3 {
+        width: 100%;
+    }
 }

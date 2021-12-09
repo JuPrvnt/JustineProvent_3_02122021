@@ -52,13 +52,13 @@
 }
 
 .menu-section {
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 20px;
 }
 
 .menu-title {
     font-weight: 200;
     font-size: 20px;
-    margin-top: 15px;
 }
 
 .menu-bar {
@@ -68,15 +68,21 @@
     margin-top: -15px;
 }
 
+.menu-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .food-content {
     display: flex;
     flex-direction: row;
     align-items: end;
     justify-content: space-between;
-    width: 370px;
+    width: 360px;
     height: auto;
     margin: 14px 0px 20px 0px;
-    padding: 15px 12px 15px 12px;
+    padding: 15px 0px 15px 12px;
     border-radius: 25px;  
     box-shadow: $shadow-site;
 }
@@ -97,11 +103,18 @@
 .food-price {
     font-size: 16px;
     font-weight: 500;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 .menu-command {
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
+}
+
+@media screen and (max-width: 395px) {
+    
+    .food-content {
+        width: 95%;
+    }
 }

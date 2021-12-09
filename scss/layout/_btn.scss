@@ -1,0 +1,18 @@
+.btn {
+    align-self: center;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    width: 230px;
+    height: 55px;
+    font-size: 16px;
+    margin: 15px 0px 20px 0px;
+    box-shadow: $shadow-site;
+    cursor: pointer;
+
+    &:hover {
+            opacity: 0.8;
+            box-shadow: 2px 2px 10px 2px $dark-grey;
+        }
+}
