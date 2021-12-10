@@ -1,4 +1,6 @@
 .homepage-header {
+    display: flex;
+    justify-content: center;
     position: relative;
     box-shadow: 0px 5px 2px 0px $shadow-grey;
 }
@@ -19,8 +21,8 @@
 .fas.fa-map-marker-alt {
     display: flex;
     align-items: center;
-    margin: 0px 17px 0px 0px;
     font-size: 15px;
+    margin: 0px 20px 2px 0px;
 }
 
 .city {
@@ -28,7 +30,7 @@
     align-items: center;
     font-weight: 500;
     font-size: 15px;
-    margin: 0px;
+    margin-right: 30px;
 }
 
 .reserved {

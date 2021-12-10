@@ -1,7 +1,6 @@
 .arrow {
-    position: absolute;
     font-size: 25px;
-    padding: 20px 0px 10px 20px;
+    margin-left: 20px;
 }
 
 .link-home {
@@ -9,7 +8,14 @@
     color: black;
 }
 
+.logo-pages-menu {
+    margin-right: 42px;
+}
+
 .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: none;
 }
 
@@ -87,18 +93,25 @@
     box-shadow: $shadow-site;
 }
 
+.food-texts {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .food-title {
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 5px;
-    overflow: hidden;
     margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .food-subtitle {
     font-size: 16px;
     font-weight: 200;
     overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0px;
 }
 
