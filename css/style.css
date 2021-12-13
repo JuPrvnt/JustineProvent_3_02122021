@@ -308,7 +308,7 @@ h2 {
   align-items: end;
   justify-content: space-between;
   width: 80%;
-  height: auto;
+  height: 50px;
   margin: 14px 0px 10px 0px;
   padding: 15px 0px 15px 12px;
   border-radius: 25px;
@@ -491,9 +491,9 @@ footer {
 
 .food-content {
   position: relative;
+  animation-name: slow-shift;
   animation-direction: normal;
   animation-iteration-count: 1;
-  animation-name: slow-shift;
   animation-duration: 1500ms;
   animation-fill-mode: backwards;
 }
@@ -522,6 +522,57 @@ footer {
 
 .delay4 {
   animation-delay: 700ms;
+}
+
+.add-to-basket {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 0px 25px 25px 0px;
+  background-color: #99E2D0;
+  display: none;
+}
+
+.fa-check-circle {
+  position: relative;
+  font-size: 20px;
+  color: white;
+}
+
+.food-content:hover .add-to-basket {
+  display: flex;
+  animation-name: add-animation;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+@keyframes add-animation {
+  0% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.food-content:hover .fa-check-circle {
+  display: flex;
+  animation-name: rotation;
+  animation-iteration-count: 1;
+  animation-duration: 800ms;
+  animation-fill-mode: backwards;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
