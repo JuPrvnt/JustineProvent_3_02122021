@@ -331,7 +331,7 @@ h2 {
 
 .food-subtitle {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0px;
@@ -487,6 +487,41 @@ footer {
 .footer-text, .fas.fa-utensils, .fas.fa-hands-helping {
   margin: 0px 0px 10px 0px;
   font-size: 14px;
+}
+
+.food-content {
+  position: relative;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-name: slow-shift;
+  animation-duration: 1500ms;
+  animation-fill-mode: backwards;
+}
+@keyframes slow-shift {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.delay1 {
+  animation-delay: 100ms;
+}
+
+.delay2 {
+  animation-delay: 300ms;
+}
+
+.delay3 {
+  animation-delay: 500ms;
+}
+
+.delay4 {
+  animation-delay: 700ms;
 }
 
 /*# sourceMappingURL=style.css.map */
