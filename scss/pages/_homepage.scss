@@ -185,26 +185,6 @@ h2 {
     margin: 0px;
 }
 
-.cards-heart, .cards-heart-purple {
-    font-size: 30px;
-    padding-right: 30px;
-}
-
-.heart {
-    width: 40px;
-    height: 40px;
-    fill: purple;
-}
-
-.fas.fa-utensils, .fas.fa-hands-helping {
-    padding-right: 10px;
-}
-
-.cards-heart-purple {
-    color: $color-primary;
-    cursor: pointer;
-}
-
 .card-link {
     text-decoration: none;
     color: black;
