@@ -60,6 +60,7 @@ h2 {
   display: flex;
   flex-direction: column;
   padding: 30px 25px 50px 20px;
+  background-color: white;
 }
 
 .section-title {
@@ -344,6 +345,7 @@ body {
 header {
   font-family: Shrikhand;
   font-size: 30px;
+  background-color: white;
 }
 
 .logo {
@@ -351,11 +353,14 @@ header {
   padding: 10px 0px 10px 0px;
 }
 
-body {
-  animation: overflow-body 4s;
+.body-home {
+  animation: overflow-body 3s;
 }
 @keyframes overflow-body {
   0% {
+    overflow: hidden;
+  }
+  99% {
     overflow: hidden;
   }
   100% {
@@ -367,23 +372,30 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  z-index: 9999;
   width: 100%;
   height: 100%;
   background-color: #99E2D0;
-  animation: loading 4s;
+  animation: loading 3s both;
+  z-index: -1;
 }
 @keyframes loading {
   0% {
-    overflow: hidden;
+    z-index: 9999;
+    opacity: 1;
+  }
+  99% {
+    z-index: 9999;
+    opacity: 1;
   }
   100% {
-    overflow: auto;
+    z-index: 0;
+    opacity: 0;
   }
 }
 
 .spinner {
   display: flex;
+  justify-content: center;
   align-self: center;
 }
 
@@ -506,6 +518,30 @@ footer {
 
 .delay4 {
   animation-delay: 700ms;
+}
+
+.delay5 {
+  animation-delay: 900ms;
+}
+
+.delay6 {
+  animation-delay: 1100ms;
+}
+
+.delay7 {
+  animation-delay: 1300ms;
+}
+
+.delay8 {
+  animation-delay: 1500ms;
+}
+
+.delay9 {
+  animation-delay: 1700ms;
+}
+
+.delay10 {
+  animation-delay: 1900ms;
 }
 
 .add-to-basket {

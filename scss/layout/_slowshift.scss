@@ -11,7 +11,6 @@
             transform: translateY(30px);
             opacity: 0; 
         }
-
         100% { 
             transform: translateY(0px); 
             opacity: 1;
@@ -33,5 +32,29 @@
 
 .delay4 {
     animation-delay: 700ms;
+}
+
+.delay5 {
+    animation-delay: 900ms;
+}
+
+.delay6 {
+    animation-delay: 1100ms;
+}
+
+.delay7 {
+    animation-delay: 1300ms;
+}
+
+.delay8 {
+    animation-delay: 1500ms;
+}
+
+.delay9 {
+    animation-delay: 1700ms;
+}
+
+.delay10 {
+    animation-delay: 1900ms;
 }
 
