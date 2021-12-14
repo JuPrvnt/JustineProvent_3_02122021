@@ -3,3 +3,8 @@ body {
     margin: 0px;
     font-family: $font-text;
 }
+
+main {
+    position: relative;
+    z-index: 1;
+}

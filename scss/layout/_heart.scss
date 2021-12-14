@@ -1,9 +1,31 @@
-.heart {
+.cards-heart {
+    padding-right: 30px;
+}
+
+.svg-heart {
     width: 40px;
     height: 40px;
-    padding-right: 30px;
+}
+
+.heart-home {
+    fill: white;
+    stroke: black;
+    stroke-width: 10px;
 
     &:hover {
-        fill: red;
+        fill: url(#lgrad);
+        stroke: none;
     }
 }
+
+.heart {
+    fill: $background-soft-grey;
+    stroke: black;
+    stroke-width: 10px;
+
+    &:hover {
+        fill: url(#lgrad);
+        stroke: none;
+    }
+}
+
