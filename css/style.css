@@ -564,5 +564,8 @@ footer {
   height: 40px;
   padding-right: 30px;
 }
+.heart:hover {
+  fill: red;
+}
 
 /*# sourceMappingURL=style.css.map */
