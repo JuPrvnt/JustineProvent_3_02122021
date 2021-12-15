@@ -15,6 +15,17 @@
     &:hover {
         fill: url(#lgrad);
         stroke: none;
+        animation: color-heart 1000ms normal 1 backwards;
+    
+        @keyframes color-heart {
+            0% { 
+                opacity: 0; 
+            }
+
+            100% { 
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -26,6 +37,17 @@
     &:hover {
         fill: url(#lgrad);
         stroke: none;
+        animation: color-heart 1000ms normal 1 backwards;
+    
+        @keyframes color-heart {
+            0% { 
+                opacity: 0; 
+            }
+
+            100% { 
+                opacity: 1;
+            }
+        }
     }
 }
 
