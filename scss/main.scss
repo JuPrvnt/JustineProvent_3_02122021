@@ -4,11 +4,10 @@
 @import "./pages/homepage";
 @import "./pages/menus";
 @import "./base/base";
-@import "./layout/layout";
 @import "./layout/header+logo";
-@import "./layout/loading-spinner";
 @import "./layout/btn";
 @import "./layout/footer";
-@import "./layout/slowshift";
-@import "./layout/addfood";
-@import "./layout/heart";
+@import "./composants/addfood";
+@import "./composants/heart";
+@import "./composants/loading-spinner";
+@import "./composants/slowshift";

@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     background-color: $color-tertiary;
-    animation: loading 3s both;
+    animation: loading 3s;
     z-index: -1; 
 
     @keyframes loading {
@@ -56,23 +56,21 @@
 }
 
 .spinner::before {
-    transform: scale(1,1);
     opacity: 1;
     animation: smallcercle 0.5s infinite linear;
 }
 
 .spinner::after {
-    transform: scale(0,0);
     opacity: 0;
     animation: largecercle 0.5s infinite linear;
 }
 
 @keyframes largecercle {
-	from { transform: scale(0.5,0.5); opacity: 0; }
-	to { transform: scale(1,1); opacity: 1; }
+	from { transform: scale(0.5); opacity: 0; }
+	to { transform: scale(1); opacity: 1; }
 }
 
 @keyframes smallcercle {
-	from { transform: scale(1,1); opacity: 1; }
-	to { transform: scale(1.5,1.5); opacity: 0; }
+	from { transform: scale(1); opacity: 1; }
+	to { transform: scale(1.5); opacity: 0; }
 }

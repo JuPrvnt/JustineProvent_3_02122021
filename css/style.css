@@ -370,93 +370,6 @@ header {
   padding: 10px 0px 10px 0px;
 }
 
-.body-home {
-  animation: overflow-body 3s;
-}
-@keyframes overflow-body {
-  0% {
-    overflow: hidden;
-  }
-  99% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: auto;
-  }
-}
-
-.section-loading-spinner {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #99E2D0;
-  animation: loading 3s both;
-  z-index: -1;
-}
-@keyframes loading {
-  0% {
-    z-index: 9999;
-    opacity: 1;
-  }
-  99% {
-    z-index: 9999;
-    opacity: 1;
-  }
-  100% {
-    z-index: 0;
-    opacity: 0;
-  }
-}
-
-.spinner {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
-
-.spinner::before, .spinner::after {
-  content: "";
-  border: 3px solid #9356DC;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-}
-
-.spinner::before {
-  transform: scale(1, 1);
-  opacity: 1;
-  animation: smallcercle 0.5s infinite linear;
-}
-
-.spinner::after {
-  transform: scale(0, 0);
-  opacity: 0;
-  animation: largecercle 0.5s infinite linear;
-}
-
-@keyframes largecercle {
-  from {
-    transform: scale(0.5, 0.5);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1, 1);
-    opacity: 1;
-  }
-}
-@keyframes smallcercle {
-  from {
-    transform: scale(1, 1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(1.5, 1.5);
-    opacity: 0;
-  }
-}
 .btn {
   align-self: center;
   background: linear-gradient(to bottom right, #ff79DA, #9356DC);
@@ -498,67 +411,17 @@ footer {
   font-size: 14px;
 }
 
+.footer-padding-top-contact {
+  padding-top: 8px;
+}
+
 .fas.fa-utensils, .fas.fa-hands-helping {
   padding-right: 10px;
 }
 
-.food-content {
-  position: relative;
-  animation-name: slow-shift;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-duration: 1500ms;
-  animation-fill-mode: backwards;
-}
-@keyframes slow-shift {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-.delay1 {
-  animation-delay: 100ms;
-}
-
-.delay2 {
-  animation-delay: 300ms;
-}
-
-.delay3 {
-  animation-delay: 500ms;
-}
-
-.delay4 {
-  animation-delay: 700ms;
-}
-
-.delay5 {
-  animation-delay: 900ms;
-}
-
-.delay6 {
-  animation-delay: 1100ms;
-}
-
-.delay7 {
-  animation-delay: 1300ms;
-}
-
-.delay8 {
-  animation-delay: 1500ms;
-}
-
-.delay9 {
-  animation-delay: 1700ms;
-}
-
-.delay10 {
-  animation-delay: 1900ms;
+.link {
+  text-decoration: none;
+  color: white;
 }
 
 .add-to-basket {
@@ -657,6 +520,160 @@ footer {
   100% {
     opacity: 1;
   }
+}
+
+.pink-gradient {
+  stop-color: #ff79da;
+  stop-opacity: 1;
+}
+
+.purple-gradient {
+  stop-color: #9356dc;
+  stop-opacity: 1;
+}
+
+.body-home {
+  animation: overflow-body 3s;
+}
+@keyframes overflow-body {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
+
+.section-loading-spinner {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #99E2D0;
+  animation: loading 3s;
+  z-index: -1;
+}
+@keyframes loading {
+  0% {
+    z-index: 9999;
+    opacity: 1;
+  }
+  99% {
+    z-index: 9999;
+    opacity: 1;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+  }
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.spinner::before, .spinner::after {
+  content: "";
+  border: 3px solid #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.spinner::before {
+  opacity: 1;
+  animation: smallcercle 0.5s infinite linear;
+}
+
+.spinner::after {
+  opacity: 0;
+  animation: largecercle 0.5s infinite linear;
+}
+
+@keyframes largecercle {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes smallcercle {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.food-content {
+  position: relative;
+  animation-name: slow-shift;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-duration: 1500ms;
+  animation-fill-mode: backwards;
+}
+@keyframes slow-shift {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.delay1 {
+  animation-delay: 100ms;
+}
+
+.delay2 {
+  animation-delay: 300ms;
+}
+
+.delay3 {
+  animation-delay: 500ms;
+}
+
+.delay4 {
+  animation-delay: 700ms;
+}
+
+.delay5 {
+  animation-delay: 900ms;
+}
+
+.delay6 {
+  animation-delay: 1100ms;
+}
+
+.delay7 {
+  animation-delay: 1300ms;
+}
+
+.delay8 {
+  animation-delay: 1500ms;
+}
+
+.delay9 {
+  animation-delay: 1700ms;
+}
+
+.delay10 {
+  animation-delay: 1900ms;
 }
 
 /*# sourceMappingURL=style.css.map */
