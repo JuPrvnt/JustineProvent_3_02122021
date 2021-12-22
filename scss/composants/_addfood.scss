@@ -5,55 +5,31 @@
     top: 15px;
     border-radius: 0px 25px 25px 0px;
     background-color: $color-tertiary;
-    display:none;
+    display: flex;
+    width: 0px;
+    height: 80px;
+    transition: width 1s;
 }
 
 .fa-check-circle {
     position: relative;
     font-size: 20px;
     color: white;
+    transform: rotate(0deg); 
+    transition: transform 1s; 
 }
 
 .food-content {
     &:hover .add-to-basket { 
-        display: flex; 
-        animation-name: add-animation;
-        animation-direction: normal;
-        animation-iteration-count: 1;
-        animation-duration: 1000ms;
-        animation-fill-mode: both;
-
-            @keyframes add-animation {
-                from { 
-                    width: 0px;
-                    height: 80px;
-                }
-        
-                to { 
-                    width: 80px; 
-                    height: 80px;
-                }
-            }
+        width: 80px;
+        transition: width 1s;
     }
 }
 
 .food-content {
         &:hover .fa-check-circle {
-            display: flex; 
-            animation-name: rotation;
-            animation-iteration-count: 1;
-            animation-duration: 800ms;
-            animation-fill-mode: backwards;
-        
-            @keyframes rotation { 
-                from { 
-                    transform: rotate(0deg); 
-                } 
-                
-                to { 
-                    transform: rotate(360deg); 
-                }
-            }       
+            transform: rotate(360deg); 
+            transition: transform 1s;  
         }  
 }
 
